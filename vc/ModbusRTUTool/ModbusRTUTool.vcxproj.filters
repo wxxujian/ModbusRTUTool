@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="res">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\controller">
+      <UniqueIdentifier>{6e4a5c39-66f6-458e-a052-b4b6a9123b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model">
+      <UniqueIdentifier>{af24d472-3a9d-4a21-b7cd-7eb66b0e9cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view">
+      <UniqueIdentifier>{28fa4f83-cba9-4a3f-a747-5e0cc22e20d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\entity">
+      <UniqueIdentifier>{ff667437-1ac3-41d7-8d73-0f35ee7ef824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\mapper">
+      <UniqueIdentifier>{626e029c-45be-48fe-b1f1-b9926d1379f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\service">
+      <UniqueIdentifier>{a2187210-97e3-4384-b55a-14e82cc08900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\mapper\impl">
+      <UniqueIdentifier>{cb2be7ff-84a0-46d2-8bd2-113e2015171f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\service\impl">
+      <UniqueIdentifier>{157710be-7011-4c9d-881a-f45782064a28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\view\control">
+      <UniqueIdentifier>{aa4d9e6a-6248-4074-9a51-dcb5ca105933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\model\handler">
+      <UniqueIdentifier>{8ecc7504-3b85-4eab-998e-b0aab22f03e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{88daba50-67b1-4730-85c8-b38008067518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util\serialport">
+      <UniqueIdentifier>{6e09c823-f089-4add-9ef7-6dd824e13ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\res">
+      <UniqueIdentifier>{3054625c-c9dc-4ae3-9402-98ff55fd5689}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\framework.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\ModbusRTUToolApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\pch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\controller\ModbusRTUToolDlg.h">
+      <Filter>src\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\view\control\ListBox.h">
+      <Filter>src\view\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\view\RtuView.h">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\view\RegisterView.h">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\util\serialport\SerialPort.h">
+      <Filter>src\util\serialport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\model\handler\ModbusRtuHandler.h">
+      <Filter>src\model\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\view\LoggerView.h">
+      <Filter>src\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\util\crc16.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\src\view\control\Edit.h">
+      <Filter>src\view\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\ModbusRTUTool\res\resource.h">
+      <Filter>res</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\ModbusRTUTool\src\ModbusRTUToolApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\ModbusRTUTool\src\pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\ModbusRTUTool\src\controller\ModbusRTUToolDlg.cpp">
+      <Filter>src\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\ModbusRTUTool\src\view\control\ListBox.cpp">
+      <Filter>src\view\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\ModbusRTUTool\src\view\RtuView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\ModbusRTUTool\src\view\RegisterView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\ModbusRTUTool\src\util\serialport\SerialPort.cpp">
+      <Filter>src\util\serialport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\ModbusRTUTool\src\model\handler\ModbusRtuHandler.cpp">
+      <Filter>src\model\handler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\ModbusRTUTool\src\view\LoggerView.cpp">
+      <Filter>src\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\ModbusRTUTool\src\util\crc16.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\ModbusRTUTool\src\view\control\Edit.cpp">
+      <Filter>src\view\control</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\source\ModbusRTUTool\res\res\ModbusRTUTool.aps">
+      <Filter>res\res</Filter>
+    </None>
+    <None Include="..\..\source\ModbusRTUTool\res\res\ModbusRTUTool.rc2">
+      <Filter>res\res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\source\ModbusRTUTool\res\res\ModbusRTUTool.ico">
+      <Filter>res\res</Filter>
+    </Image>
+    <Image Include="..\..\source\ModbusRTUTool\res\res\serialport.ico">
+      <Filter>res\res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\source\ModbusRTUTool\res\ModbusRTUTool.rc">
+      <Filter>res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
