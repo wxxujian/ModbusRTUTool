@@ -150,6 +150,7 @@
 
 #include <string>
 #include <list>
+#include <vector>
 
 
 #ifndef WM_COMM_MSG_BASE 
@@ -188,6 +189,11 @@ namespace itas109 {
     {
         int len;
         PBYTE buffer;
+    };
+
+    struct SerialPortInfo {
+        std::string portName;
+        std::string description;
     };
 
 	class _declspec(dllexport) CSerialPort
@@ -293,7 +299,7 @@ namespace itas109 {
 		~CSerialPortInfo();
 
 		static std::list<std::string> availablePorts();
-        static std::list<std::wstring> availablePortsW();           // Ðì½¡Ìí¼ÓÓÚ2020.05.16
+        static std::vector<SerialPortInfo> availablePortInfos();
 	};
 };
 
