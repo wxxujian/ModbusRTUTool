@@ -81,27 +81,9 @@ void RtuView::OnInitialUpdate()
     CFormView::OnInitialUpdate();
 
     // TODO: 在此添加专用代码和/或调用基类
-    //获取串口号
-//    list<string> m_portsList = itas109::CSerialPortInfo::availablePorts();
-//    list<string>::iterator itor;
-//    TCHAR m_regKeyValue[255];
-//    for (itor = m_portsList.begin(); itor != m_portsList.end(); ++itor)
-//    {
-//#ifdef UNICODE
-//        int iLength;
-//        const char* _char = (*itor).c_str();
-//        iLength = MultiByteToWideChar(CP_ACP, 0, _char, strlen(_char) + 1, NULL, 0);
-//        MultiByteToWideChar(CP_ACP, 0, _char, strlen(_char) + 1, m_regKeyValue, iLength);
-//#else
-//        strcpy_s(m_regKeyValue, 255, (*itor).c_str());
-//#endif
-//        comboPort.AddString(m_regKeyValue);
-//    }
 
-    list<wstring> portList = itas109::CSerialPortInfo::availablePortsW();
-    for (const wstring& portName : portList) {
-        comboPort.AddString(portName.c_str());
-    }
+    //获取串口号
+    OnBnClickedButtonSearch();
 
     buttonOpen.ShowWindow(SW_SHOW);
     buttonClose.ShowWindow(SW_HIDE);
@@ -156,10 +138,22 @@ void RtuView::OnBnClickedButtonSearch()
 {
     // TODO: 在此添加控件通知处理程序代码
     comboPort.ResetContent();
-    list<wstring> portList = itas109::CSerialPortInfo::availablePortsW();
-    for (const wstring& portName : portList) {
-        comboPort.AddString(portName.c_str());
+        //获取串口号
+    std::vector<itas109::SerialPortInfo> m_portsList = itas109::CSerialPortInfo::availablePortInfos();
+    TCHAR m_regKeyValue[255];
+    for (int i = 0; i < m_portsList.size(); i++)
+    {
+#ifdef UNICODE
+        int iLength;
+        const char* _char = m_portsList[i].portName.c_str();
+        iLength = MultiByteToWideChar(CP_ACP, 0, _char, strlen(_char) + 1, NULL, 0);
+        MultiByteToWideChar(CP_ACP, 0, _char, strlen(_char) + 1, m_regKeyValue, iLength);
+#else
+        strcpy_s(m_regKeyValue, 255, m_portsList[i].portName.c_str());
+#endif
+        comboPort.AddString(m_regKeyValue);
     }
+
 }
 
 void RtuView::OnBnClickedButtonOpen()
